@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 15px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    .container-3 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .container-3 h6 {
+      font-weight: 700;
+    }
+
+    .container-2 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border: transparent;
+      border-radius: 5%;
+      background-color: hsl(225, 100%, 98%);
+      margin-bottom: 1rem;
+      padding: 0.5rem;
+    }
+
+    .img-para {
+      padding: 0.75rem;
+    }
+
+    #para {
+      margin-bottom: 0;
+      color: hsl(245, 75%, 52%);
+      font-weight: 500;
+    }
+
+    .para-only {
+      opacity: 70%;
+    }
+
+    .card-body {
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .card-body h3 {
+      margin-bottom: 1rem;
+      font-weight: 900;
+    }
+
+    .card-body p {
+      font-size: 16px;
+    }
+
+    .container {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card {
+      border: transparent;
+      border-radius: 3%;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn-para p {
+      font-weight: 500;
+      padding: 0.25rem;
+    }
+
+    .btn-para {
+      width: 100%;
+      background-color: hsl(245, 75%, 52%);
+      box-shadow: 0 20px 20px hsl(225, 100%, 94%);
+      margin-bottom: 1rem;
+    }
+
+    .btn-cancel {
+      text-decoration: none;
+      color: hsl(224, 23%, 55%);
+      font-weight: 500;
+    }
+
+    .link:hover {
+      cursor: pointer;
+      text-decoration: none;
+      color: blueviolet;
+    }
+
+    .links:hover {
+      cursor: pointer;
+      background-color: blueviolet;
+    }
+
+    .btn-cancel:hover {
+      cursor: pointer;
+      color: black;
+    }
+
+    body {
+      background-image: url(./images/pattern-background-mobile.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      /* contain */
+      background-color: hsl(225, 100%, 98%);
+      /* hsl(224, 23%, 55%) */
+    }
+
+    @media (min-width:992px) {
+      body {
+        background-image: url(./images/pattern-background-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="card" style="width: 22rem;">
+      <div>
+        <img src="./images/illustration-hero.svg" alt="Illustartion" class="card-img-top">
+      </div>
+      <div class="card-body">
+        <h3>Order Summary</h3>
+        <p class="para-only">You can now listen to millions of songs, audiobooks, and podcasts on any
+          device anywhere you like!</p>
+        <div class="container-2">
+          <div class="container-3">
+            <div>
+              <img src="./images/icon-music.svg" alt="music" class="img-para">
+            </div>
+            <div>
+              <h6 class="my-0">Annual Plan</h6>
+              <p class="my-0 para-only">$59.99/year</p>
+            </div>
+          </div>
+          <div>
+            <p class="img-para" id="para"><a href="#" class="link">Change</a></p>
+          </div>
+        </div>
+        <button type="button" class="btn btn-primary btn-lg btn-para px-1 py-1 links">
+          <p class="mb-0">Proceed to Payment</p>
+        </button>
+        <a href="#" class="btn-cancel">
+          <p class="mb-0">Cancel Order</p>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="attribution">
+    <p class="mb-0">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend
+        Mentor</a>.</p>
+    <p class="mb-0">Coded by <a href="https://www.github.com/aholic-archie" target="_blank">Archishman Dash</a>.</p>
+  </div>
+</body>
+
+</html>
